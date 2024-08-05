@@ -1,0 +1,328 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "login;successful-login-with-valid-credentials",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Successful login with valid credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1465980299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I am on the login page",
+            "match": {
+              "location": "features\\step_definitions\\login.steps.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1378976499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I enter valid credentials",
+            "match": {
+              "location": "features\\step_definitions\\login.steps.js:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 780913500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I click the login button",
+            "match": {
+              "location": "features\\step_definitions\\login.steps.js:44"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 388493300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I should see the tasks page",
+            "match": {
+              "location": "features\\step_definitions\\login.steps.js:53"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 139574500
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 209958899
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login;failed-login-with-incorrect-email",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Failed login with incorrect email",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1386025400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "I am on the login page",
+            "match": {
+              "location": "features\\step_definitions\\login.steps.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1185998600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "I enter an incorrect email and a valid password",
+            "match": {
+              "location": "features\\step_definitions\\login.steps.js:70"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 846304000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "I click the login button",
+            "match": {
+              "location": "features\\step_definitions\\login.steps.js:44"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 389017699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "I should see an error message for incorrect email",
+            "match": {
+              "location": "features\\step_definitions\\login.steps.js:81"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 341939900,
+              "error_message": "NoSuchElementError: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"Typography[color=\"error\"]\"}\n  (Session info: chrome=127.0.6533.72)\n    at Object.throwDecodedError (D:\\ESPE\\5. Quinto Semestre\\INGENIERIA DE REQUISITOS\\Test Cucumber\\HomePassion-Project-main\\HomePassion-Project-main\\HomePassion-Project-main\\node_modules\\selenium-webdriver\\lib\\error.js:521:15)\n    at parseHttpResponse (D:\\ESPE\\5. Quinto Semestre\\INGENIERIA DE REQUISITOS\\Test Cucumber\\HomePassion-Project-main\\HomePassion-Project-main\\HomePassion-Project-main\\node_modules\\selenium-webdriver\\lib\\http.js:514:13)\n    at Executor.execute (D:\\ESPE\\5. Quinto Semestre\\INGENIERIA DE REQUISITOS\\Test Cucumber\\HomePassion-Project-main\\HomePassion-Project-main\\HomePassion-Project-main\\node_modules\\selenium-webdriver\\lib\\http.js:446:28)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Driver.execute (D:\\ESPE\\5. Quinto Semestre\\INGENIERIA DE REQUISITOS\\Test Cucumber\\HomePassion-Project-main\\HomePassion-Project-main\\HomePassion-Project-main\\node_modules\\selenium-webdriver\\lib\\webdriver.js:742:17)\n    at async toWireValue (D:\\ESPE\\5. Quinto Semestre\\INGENIERIA DE REQUISITOS\\Test Cucumber\\HomePassion-Project-main\\HomePassion-Project-main\\HomePassion-Project-main\\node_modules\\selenium-webdriver\\lib\\webdriver.js:147:15)\n    at async D:\\ESPE\\5. Quinto Semestre\\INGENIERIA DE REQUISITOS\\Test Cucumber\\HomePassion-Project-main\\HomePassion-Project-main\\HomePassion-Project-main\\node_modules\\selenium-webdriver\\lib\\webdriver.js:193:16\n    at async forEachKey (D:\\ESPE\\5. Quinto Semestre\\INGENIERIA DE REQUISITOS\\Test Cucumber\\HomePassion-Project-main\\HomePassion-Project-main\\HomePassion-Project-main\\node_modules\\selenium-webdriver\\lib\\webdriver.js:187:9)\n    at async convertKeys (D:\\ESPE\\5. Quinto Semestre\\INGENIERIA DE REQUISITOS\\Test Cucumber\\HomePassion-Project-main\\HomePassion-Project-main\\HomePassion-Project-main\\node_modules\\selenium-webdriver\\lib\\webdriver.js:192:3)\n    at async Driver.execute (D:\\ESPE\\5. Quinto Semestre\\INGENIERIA DE REQUISITOS\\Test Cucumber\\HomePassion-Project-main\\HomePassion-Project-main\\HomePassion-Project-main\\node_modules\\selenium-webdriver\\lib\\webdriver.js:740:22)"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 320835999
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login;failed-login-with-incorrect-password",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "Failed login with incorrect password",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1362023899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 16,
+            "name": "I am on the login page",
+            "match": {
+              "location": "features\\step_definitions\\login.steps.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1234177600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "I enter a valid email and an incorrect password",
+            "match": {
+              "location": "features\\step_definitions\\login.steps.js:99"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 871683900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "I click the login button",
+            "match": {
+              "location": "features\\step_definitions\\login.steps.js:44"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 403288300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "I should see an error message for incorrect password",
+            "match": {
+              "location": "features\\step_definitions\\login.steps.js:110"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 299958499,
+              "error_message": "NoSuchElementError: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"Typography[color=\"error\"]\"}\n  (Session info: chrome=127.0.6533.72)\n    at Object.throwDecodedError (D:\\ESPE\\5. Quinto Semestre\\INGENIERIA DE REQUISITOS\\Test Cucumber\\HomePassion-Project-main\\HomePassion-Project-main\\HomePassion-Project-main\\node_modules\\selenium-webdriver\\lib\\error.js:521:15)\n    at parseHttpResponse (D:\\ESPE\\5. Quinto Semestre\\INGENIERIA DE REQUISITOS\\Test Cucumber\\HomePassion-Project-main\\HomePassion-Project-main\\HomePassion-Project-main\\node_modules\\selenium-webdriver\\lib\\http.js:514:13)\n    at Executor.execute (D:\\ESPE\\5. Quinto Semestre\\INGENIERIA DE REQUISITOS\\Test Cucumber\\HomePassion-Project-main\\HomePassion-Project-main\\HomePassion-Project-main\\node_modules\\selenium-webdriver\\lib\\http.js:446:28)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Driver.execute (D:\\ESPE\\5. Quinto Semestre\\INGENIERIA DE REQUISITOS\\Test Cucumber\\HomePassion-Project-main\\HomePassion-Project-main\\HomePassion-Project-main\\node_modules\\selenium-webdriver\\lib\\webdriver.js:742:17)\n    at async toWireValue (D:\\ESPE\\5. Quinto Semestre\\INGENIERIA DE REQUISITOS\\Test Cucumber\\HomePassion-Project-main\\HomePassion-Project-main\\HomePassion-Project-main\\node_modules\\selenium-webdriver\\lib\\webdriver.js:147:15)\n    at async D:\\ESPE\\5. Quinto Semestre\\INGENIERIA DE REQUISITOS\\Test Cucumber\\HomePassion-Project-main\\HomePassion-Project-main\\HomePassion-Project-main\\node_modules\\selenium-webdriver\\lib\\webdriver.js:193:16\n    at async forEachKey (D:\\ESPE\\5. Quinto Semestre\\INGENIERIA DE REQUISITOS\\Test Cucumber\\HomePassion-Project-main\\HomePassion-Project-main\\HomePassion-Project-main\\node_modules\\selenium-webdriver\\lib\\webdriver.js:187:9)\n    at async convertKeys (D:\\ESPE\\5. Quinto Semestre\\INGENIERIA DE REQUISITOS\\Test Cucumber\\HomePassion-Project-main\\HomePassion-Project-main\\HomePassion-Project-main\\node_modules\\selenium-webdriver\\lib\\webdriver.js:192:3)\n    at async Driver.execute (D:\\ESPE\\5. Quinto Semestre\\INGENIERIA DE REQUISITOS\\Test Cucumber\\HomePassion-Project-main\\HomePassion-Project-main\\HomePassion-Project-main\\node_modules\\selenium-webdriver\\lib\\webdriver.js:740:22)"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 334102099
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login;failed-login-due-to-server-error",
+        "keyword": "Scenario",
+        "line": 21,
+        "name": "Failed login due to server error",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1403049600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 22,
+            "name": "I am on the login page",
+            "match": {
+              "location": "features\\step_definitions\\login.steps.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1271502699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 23,
+            "name": "I enter valid credentials",
+            "match": {
+              "location": "features\\step_definitions\\login.steps.js:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 772822300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 24,
+            "name": "I click the login button",
+            "match": {
+              "location": "features\\step_definitions\\login.steps.js:44"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 387781399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 25,
+            "name": "I should see a server error message",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 182328299
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "login",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Login",
+    "tags": [],
+    "uri": "features\\login.feature"
+  }
+]

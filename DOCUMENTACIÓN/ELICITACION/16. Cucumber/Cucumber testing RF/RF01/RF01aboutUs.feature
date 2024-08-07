@@ -1,6 +1,6 @@
-Feature: Testing about us section
+Feature: Testing the About Us section
 
-  Scenario: Visualización de la sección "Sobre nosotros"
-    Given el visitante ha ingresado a la página web
-    When selecciona la opción "sobre nosotros" en el menú principal
-    Then la página de información del negocio se muestra correctamente
+  Scenario: Viewing the About Us section
+    Given the visitor has entered the website
+    When the visitor selects the About Us option from the main menu
+    Then the business information page is displayed correctly

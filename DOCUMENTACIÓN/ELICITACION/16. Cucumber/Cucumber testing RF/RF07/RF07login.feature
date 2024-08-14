@@ -1,25 +1,16 @@
-Feature: Login
+Feature: Login de administrador
 
-  Scenario: Successful login with valid credentials
-    Given I am on the login page
-    When I enter valid credentials
-    And I click the login button
-    Then I should see the tasks page
+Scenario: Login exitoso con credenciales válidas
+  Given I am on the login page
+  When I submit valid login credentials
+  Then I should be redirected to the tasks page
 
-  Scenario: Failed login with incorrect email
-    Given I am on the login page
-    When I enter an incorrect email and a valid password
-    And I click the login button
-    Then I should see an error message for incorrect email
+Scenario: Login fallido por credenciales inválidas
+  Given I am on the login page
+  When I submit invalid login credentials
+  Then I should see an error message
 
-  Scenario: Failed login with incorrect password
-    Given I am on the login page
-    When I enter a valid email and an incorrect password
-    And I click the login button
-    Then I should see an error message for incorrect password
-
-  Scenario: Failed login due to server error
-    Given I am on the login page
-    When I enter valid credentials
-    And I click the login button
-    Then I should see a server error message
+Scenario: Login fallido por campos vacíos
+  Given I am on the login page
+  When I submit the login form with empty fields
+  Then I should not be able to submit the form and see validation indicators
